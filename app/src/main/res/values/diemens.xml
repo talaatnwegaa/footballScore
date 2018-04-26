@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="team_a_margin_top">20dp</dimen>
+    <dimen name="team_b_margin_top">20dp</dimen>
+    <dimen name="team_a_margin_left">13dp</dimen>
+    <dimen name="team_b_margin_left">72dp</dimen>
+    <dimen name="score_margin_1">13dp</dimen>
+    <dimen name="score_margin_2">50dp</dimen>
+
+    <dimen name="button">35dp</dimen>
+
+    <dimen name="marginleft_1">37dp</dimen>
+    <dimen name="marginleft_2">80dp</dimen>
+    <dimen name="marginleft_3">175dp</dimen>
+    <dimen name="marginleft_4">290dp</dimen>
+    <dimen name="marginleft_5">350dp</dimen>
+
+    <dimen name="marginleft_shot">125dp</dimen>
+    <dimen name="marginleft_free_kicks">147dp</dimen>
+    <dimen name="marginleft_corner_kicks">130dp</dimen>
+    <dimen name="marginleft_offsides">153dp</dimen>
+    <dimen name="marginleft_throw_in">152dp</dimen>
+    <dimen name="marginleft_fouls">167dp</dimen>
+    <dimen name="marginleft_reset_button">165dp</dimen>
+
+
+
+
+    <dimen name="Relative_marginTop_1">90dp</dimen>
+    <dimen name="Relative_marginTop_2">150dp</dimen>
+    <dimen name="Relative_marginTop_3">210dp</dimen>
+    <dimen name="Relative_marginTop_4">270dp</dimen>
+    <dimen name="Relative_marginTop_5">330dp</dimen>
+    <dimen name="Relative_marginTop_6">390dp</dimen>
+    <dimen name="Relative_marginTop_7">450dp</dimen>
+    <dimen name="Relative_marginTop_8">510dp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

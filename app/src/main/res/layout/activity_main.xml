@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.talaat_nwegaa.footballscore.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/team_a_margin_left"
+                android:layout_marginTop="@dimen/team_a_margin_top"
+                android:background="@color/yellow"
+                android:text="Team A"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/football" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/team_b_margin_left"
+                android:layout_marginTop="@dimen/team_b_margin_top"
+                android:background="@color/yellow"
+                android:text="Team B"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_1">
+
+            <TextView
+                android:id="@+id/team_a_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incGoalsOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_3"
+                android:text="Goals"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:onClick="incGoalsOfTeamB"
+                android:text="+"
+                style="@style/plusButton" />
+
+            <TextView
+                android:id="@+id/team_b_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_2">
+
+            <TextView
+                android:id="@+id/team_a_shots_on_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incShotsOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_shot"
+                android:text="Shots on Goal"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incShotsOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_shots_on_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_3">
+
+            <TextView
+                android:id="@+id/team_a_free_kicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incFreeKicksOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_free_kicks"
+                android:text="Free Kicks"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incFreeKicksOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_free_kicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_4">
+
+            <TextView
+                android:id="@+id/team_a_corner_kicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incCornerKicksOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_corner_kicks"
+                android:text="Corner Kicks"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incCornerKicksOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_corner_kicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_5">
+
+            <TextView
+                android:id="@+id/team_a_offsides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incOffsidesOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_offsides"
+                android:text="Offsides"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incOffsidesOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_offsides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_6">
+
+            <TextView
+                android:id="@+id/team_a_throw_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incThrowInOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_throw_in"
+                android:text="Throw-in"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incThrowInOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_throw_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Relative_marginTop_7">
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_2"
+                android:background="@color/red"
+                android:onClick="incFoulsOfTeamA"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_fouls"
+                android:text=" Fouls"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:layout_marginLeft="@dimen/marginleft_4"
+                android:background="@color/blue"
+                android:onClick="incFoulsOfTeamB"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_5"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleft_reset_button"
+            android:layout_marginTop="@dimen/Relative_marginTop_8"
+            android:background="@color/green_2"
+            android:onClick="resetall"
+            android:text="Reset" />
+    </RelativeLayout>
+
+</ScrollView>
